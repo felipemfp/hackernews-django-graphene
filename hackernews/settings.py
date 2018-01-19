@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'links',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,7 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'hackernews.schema.schema',
 }
+
+# Custom Token based Authentication
+
+AUTH_USER_MODEL = 'users.User'
